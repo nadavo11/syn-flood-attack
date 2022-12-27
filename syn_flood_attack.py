@@ -17,15 +17,6 @@ def randInt():
     return x
 
 
-""""def SYN_Flood(dstIP, dstPort, counter):
-    # TODO: fill this function:
-    # use a FOR loop
-    # build IP_Packet
-    # build TCP_Packet
-    # use prints to debug and make the execution more clear.""""
-
-
-
 def SYN_Flood(dstIP, dstPort, counter):
     for i in range(counter):
         # Build IP packet
@@ -39,7 +30,6 @@ def SYN_Flood(dstIP, dstPort, counter):
 
 
 def info():
-    os.system("clear")
     print
     "#############################"
     print
@@ -47,7 +37,7 @@ def info():
     print
     "#############################"
 
-    dstIP = raw_input("\nTarget IP : ")
+    dstIP = input("\nTarget IP : ")
     dstPort = input("Target Port : ")
 
     return dstIP, int(dstPort)
